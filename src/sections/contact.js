@@ -3,7 +3,7 @@ import React from 'react';
 import { Section } from '../components';
 
 const Contact = () => (
-  <Section>
+  <Section id="contact">
     <h1>Contact</h1>
   </Section>
 );

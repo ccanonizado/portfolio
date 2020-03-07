@@ -2,8 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
-const Container = styled('div')(({ theme, primary }) => ({
+const Container = styled('div')(({ theme, primary, top }) => ({
   width: '100%',
+  padding: top ? '2em 0 0' : '4em 0',
   background: primary ? theme.primaryBgColor : theme.secondaryBgColor
 }));
 
@@ -14,20 +15,28 @@ const Center = styled('div')({
   transform: 'translateX(-50%)'
 });
 
-const Section = ({ children, primary }) => (
-  <Container primary={primary}>
-    <Center>{children}</Center>
-  </Container>
+const Section = ({
+ children, primary, top, id 
+}) => (
+  <section id={id}>
+    <Container primary={primary} top={top}>
+      <Center>{children}</Center>
+    </Container>
+  </section>
 );
 
 Section.propTypes = {
-  children: PropTypes.element,
-  primary: PropTypes.bool
+  children: PropTypes.node,
+  primary: PropTypes.bool,
+  top: PropTypes.bool,
+  id: PropTypes.string
 };
 
 Section.defaultProps = {
   children: null,
-  primary: false
+  primary: false,
+  top: false,
+  id: ''
 };
 
 export default Section;
