@@ -2,7 +2,7 @@ const PRIMARY_COLOR = '#0B0C10';
 const SECONDARY_COLOR = '#202834';
 
 const WHITE = '#FFFFFF';
-const GRAY = '#C0C1C5';
+const GRAY = '#C5C6C8';
 const CYAN = '#68FCF1';
 
 const theme = {
@@ -10,9 +10,12 @@ const theme = {
   secondaryBgColor: SECONDARY_COLOR,
   aboutIntroColor: GRAY,
   aboutSubHeaderColor: CYAN,
+  dividerColor: WHITE,
+  footerContentColor: GRAY,
   linkColor: WHITE,
   linkHoverColor: CYAN,
-  dividerColor: WHITE
+  smallHeaderCyan: CYAN,
+  smallHeaderGray: GRAY
 };
 
 export default theme;

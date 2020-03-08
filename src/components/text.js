@@ -16,9 +16,16 @@ const h3 = styled('h3')(({ margin }) => ({
   fontSize: '1.6rem'
 }));
 
-const p = styled('p')(({ margin }) => ({
+const h4 = styled('h4')(({ theme, firaCode, margin }) => ({
   margin,
-  fontSize: '1.4rem'
+  fontSize: '1.5rem',
+  fontFamily: firaCode ? 'Fira Code' : 'Nunito',
+  color: firaCode ? theme.smallHeaderGray : theme.smallHeaderCyan
+}));
+
+const p = styled('p')(({ large, margin }) => ({
+  margin,
+  fontSize: large ? '1.4rem' : '1.2rem'
 }));
 
 const a = styled('a')(({ theme, margin }) => ({
@@ -38,6 +45,7 @@ const Text = (children) => <Text.p>{children}</Text.p>;
 Text.h1 = h1;
 Text.h2 = h2;
 Text.h3 = h3;
+Text.h4 = h4;
 Text.a = a;
 Text.p = p;
 

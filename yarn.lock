@@ -8856,6 +8856,11 @@ react-app-polyfill@^1.0.6:
     regenerator-runtime "^0.13.3"
     whatwg-fetch "^3.0.0"
 
+react-custom-scroll@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-custom-scroll/-/react-custom-scroll-4.2.0.tgz#171d8128ef505cf7d45e5aa9ff1d5b31243bd971"
+  integrity sha512-+qpOKJdNfGYkoEydlJmb7R9LyXYw+ufWSouIyKX1uIAHdxsjigp1cLmjFhU1Db+6uzwvGf92YW9ry8gdTHHSdg==
+
 react-dev-utils@^10.2.0:
   version "10.2.0"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-10.2.0.tgz#b11cc48aa2be2502fb3c27a50d1dfa95cfa9dfe0"

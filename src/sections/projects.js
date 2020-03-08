@@ -1,10 +1,12 @@
 import React from 'react';
 
-import { Section } from '../components';
+import { Section, Text } from '../components';
+
+import { projects } from '../constants/content';
 
 const Projects = () => (
   <Section primary id="projects">
-    <h1>Projects</h1>
+    <Text.h3>{projects.header}</Text.h3>
   </Section>
 );
 

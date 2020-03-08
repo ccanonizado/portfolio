@@ -37,7 +37,9 @@ const About = () => (
     <Content>
       <Text.h1>{about.header}</Text.h1>
       <SubHeader>{about.subHeader}</SubHeader>
-      <Intro margin="1em 0 0">{about.intro}</Intro>
+      <Intro large margin="1em 0 0">
+        {about.intro}
+      </Intro>
     </Content>
     <TechContainer>
       <Tech />

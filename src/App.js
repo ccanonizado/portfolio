@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { ThemeProvider } from 'emotion-theming';
 
+import { Footer } from './components';
 import {
  About, Contact, Projects, Work 
 } from './sections';
@@ -23,7 +24,7 @@ const App = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  });
 
   return (
     <ThemeProvider theme={theme}>
@@ -32,6 +33,7 @@ const App = () => {
         <Work />
         <Projects />
         <Contact />
+        <Footer />
       </Container>
     </ThemeProvider>
   );
