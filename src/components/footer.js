@@ -9,7 +9,7 @@ const Container = styled('div')({
 });
 
 const Content = styled('p')(({ theme }) => ({
-  padding: '20px 0',
+  padding: '2em 0',
   fontSize: '1rem',
   fontFamily: 'Fira Code',
   color: theme.footerContentColor

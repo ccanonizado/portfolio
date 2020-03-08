@@ -1,35 +1,30 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const h1 = styled('h1')(({ margin }) => ({
-  margin,
+const h1 = styled('h1')({
   fontSize: '3.6rem'
-}));
+});
 
-const h2 = styled('h2')(({ margin }) => ({
-  margin,
+const h2 = styled('h2')({
   fontSize: '2.4rem'
-}));
+});
 
-const h3 = styled('h3')(({ margin }) => ({
-  margin,
+const h3 = styled('h3')({
   fontSize: '1.6rem'
-}));
+});
 
-const h4 = styled('h4')(({ theme, firaCode, margin }) => ({
-  margin,
-  fontSize: '1.5rem',
+const h4 = styled('h4')(({ theme, firaCode }) => ({
+  fontWeight: 'normal',
+  fontSize: firaCode ? '1.15rem' : '1.4rem',
   fontFamily: firaCode ? 'Fira Code' : 'Nunito',
   color: firaCode ? theme.smallHeaderGray : theme.smallHeaderCyan
 }));
 
-const p = styled('p')(({ large, margin }) => ({
-  margin,
-  fontSize: large ? '1.4rem' : '1.2rem'
+const p = styled('p')(({ large }) => ({
+  fontSize: large ? '1.4rem' : '1.1rem'
 }));
 
-const a = styled('a')(({ theme, margin }) => ({
-  margin,
+const a = styled('a')(({ theme }) => ({
   cursor: 'pointer',
   fontSize: '1.4rem',
   textDecoration: 'none',

@@ -23,19 +23,22 @@ module.exports = {
     header: 'MY WORK EXPERIENCE',
     content: [
       {
-        title: 'Samsung Research and Development Philippines',
-        subTitle: 'React Developer (Aug 2018 - Present)',
-        description: 'sample sample sample sample sample'
+        title: 'Samsung Research and Development Institute Philippines',
+        subTitle: 'React Developer (August 2019 - Present)',
+        description:
+          'Currently, I am working in Samsung R&D Philippines, one of the 9* research institutes of Samsung Worldwide. I am a front-end developer who delivers high-quality features to our projects. We also have algorithm exams to gauge and improve our problem-solving abilities. I now have the title Algorithm Professional, a title that only a small percentage of the company earns.'
       },
       {
-        title: 'Samsung Research and Development Philippines',
-        subTitle: 'React Developer (Aug 2018 - Present)',
-        description: 'sample sample sample sample sample'
+        title: 'Futurity Learning',
+        subTitle: 'Developer Specialist (March 2019 - June 2019)',
+        description:
+          'This is a part-time remote work that I did when I was a senior in college where I discovered Flutter and how it is such a flexible and good language to work with. During this time, I was able to talk to clients and express my creative freedom in developing proofs of concept which would, later on, be developed for production.'
       },
       {
-        title: 'Samsung Research and Development Philippines',
-        subTitle: 'React Developer (Aug 2018 - Present)',
-        description: 'sample sample sample sample sample'
+        title: 'Amihan Global Strategies (AGSX)',
+        subTitle: 'Software Engineer Intern (Jun 2018 – Aug 2018)',
+        description:
+          'I worked for AGSX for my internship where I experienced what it is like to work in a start-up corporate setting. This is where I first learned the industry practices, where I got to create a financial chat-bot using Angular 5 and Basic Scala Backend.'
       }
     ]
   },

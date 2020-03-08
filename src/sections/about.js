@@ -16,6 +16,7 @@ const SubHeader = styled(Text.h2)(({ theme }) => ({
 }));
 
 const Intro = styled(Text.p)(({ theme }) => ({
+  marginTop: '1em',
   color: theme.aboutIntroColor
 }));
 
@@ -37,9 +38,7 @@ const About = () => (
     <Content>
       <Text.h1>{about.header}</Text.h1>
       <SubHeader>{about.subHeader}</SubHeader>
-      <Intro large margin="1em 0 0">
-        {about.intro}
-      </Intro>
+      <Intro large>{about.intro}</Intro>
     </Content>
     <TechContainer>
       <Tech />
