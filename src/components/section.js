@@ -1,9 +1,10 @@
 import React from 'react';
-import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
+import styled from '@emotion/styled';
 
 const Container = styled('div')(({ theme, primary, top }) => ({
   width: '100%',
+  // height: top ? '100vh' : 'auto',
   padding: top ? '2em 0 0' : '4em 0',
   background: primary ? theme.primaryBgColor : theme.secondaryBgColor
 }));
