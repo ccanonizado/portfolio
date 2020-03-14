@@ -23,17 +23,11 @@ const Nav = () => {
   const [work, projects, contact] = navLinks;
   return (
     <Container>
-      <Text.a data-scroll href={work.url}>
-        {work.name}
-      </Text.a>
+      <Text.a href={work.url}>{work.name}</Text.a>
       <Divider />
-      <Text.a data-scroll href={projects.url}>
-        {projects.name}
-      </Text.a>
+      <Text.a href={projects.url}>{projects.name}</Text.a>
       <Divider />
-      <Text.a data-scroll href={contact.url}>
-        {contact.name}
-      </Text.a>
+      <Text.a href={contact.url}>{contact.name}</Text.a>
     </Container>
   );
 };

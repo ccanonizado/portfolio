@@ -1,14 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 
 import { ReactComponent as UpSvg } from '../assets/icons/up.svg';
 
-const Container = styled('div')({
+const Container = styled('div')(({ scrolling }) => ({
   right: 12,
   bottom: 8,
-  position: 'fixed'
-});
+  position: 'fixed',
+  transition: 'visibility 0s, opacity 0.25s linear',
+  visibility: scrolling ? 'visible' : 'hidden',
+  opacity: scrolling ? 1 : 0
+}));
 
 const UpButton = styled(UpSvg)(({ theme }) => ({
   width: 30,
@@ -22,30 +24,29 @@ const UpButton = styled(UpSvg)(({ theme }) => ({
   }
 }));
 
-const Up = ({ scrollRef }) => {
-  const handleScroll = () =>
-    scrollRef.current.view.scroll({
-      behavior: 'smooth',
-      left: 0,
-      top: 0
-    });
+const Up = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.pageYOffset;
+      if (scrollPos > 0 && !scrolling) setScrolling(true);
+      else if (scrollPos === 0 && scrolling) setScrolling(false);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [scrolling]);
 
   return (
-    <Container>
-      <UpButton onClick={handleScroll} />
+    <Container scrolling={scrolling}>
+      <a href="#about">
+        <i role="button" aria-label="Navigate to Top">
+          <UpButton />
+        </i>
+      </a>
     </Container>
   );
-};
-
-Up.propTypes = {
-  scrollRef: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.shape({ current: PropTypes.any })
-  ])
-};
-
-Up.defaultProps = {
-  scrollRef: null
 };
 
 export default Up;
