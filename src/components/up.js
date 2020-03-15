@@ -3,13 +3,13 @@ import styled from '@emotion/styled';
 
 import { ReactComponent as UpSvg } from '../assets/icons/up.svg';
 
-const Container = styled('div')(({ scrolling }) => ({
+const Container = styled('div')(({ visibility, opacity }) => ({
   right: 12,
   bottom: 8,
   position: 'fixed',
   transition: 'visibility 0s, opacity 0.25s linear',
-  visibility: scrolling ? 'visible' : 'hidden',
-  opacity: scrolling ? 1 : 0
+  visibility,
+  opacity
 }));
 
 const UpButton = styled(UpSvg)(({ theme }) => ({
@@ -39,7 +39,10 @@ const Up = () => {
   }, [scrolling]);
 
   return (
-    <Container scrolling={scrolling}>
+    <Container
+      visibility={scrolling ? 'visible' : 'hidden'}
+      opacity={scrolling ? 1 : 0}
+    >
       <a href="#about">
         <i role="button" aria-label="Navigate to Top">
           <UpButton />

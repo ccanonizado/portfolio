@@ -8,6 +8,11 @@
   background: #c0c1c5;
 }
 
+.wf-firacode-n4-loading,
+.wf-nunito-n4-loading {
+  visibility: hidden;
+}
+
 body {
   font-size: 62.5%;
   font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",

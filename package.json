@@ -17,7 +17,8 @@
     "react-helmet": "^5.2.1",
     "react-scripts": "3.4.0",
     "scrollreveal": "^4.0.5",
-    "smooth-scroll": "^16.1.2"
+    "smooth-scroll": "^16.1.2",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",

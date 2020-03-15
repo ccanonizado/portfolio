@@ -15,6 +15,7 @@ const theme = {
   linkColor: WHITE,
   linkHoverColor: CYAN,
   projectsDescriptionBgColor: SECONDARY_COLOR,
+  projectsInfoColor: GRAY,
   smallHeaderCyan: CYAN,
   smallHeaderGray: GRAY
 };

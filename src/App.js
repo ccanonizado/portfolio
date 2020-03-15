@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
 import styled from '@emotion/styled';
 import SmoothScroll from 'smooth-scroll';
+import WebFont from 'webfontloader';
 
 import { Footer, Up } from './components';
 import {
@@ -14,6 +15,12 @@ const Container = styled('div')({ width: '100%' });
 
 const App = () => {
   SmoothScroll('a[href*="#"]');
+
+  WebFont.load({
+    custom: {
+      families: ['Nunito', 'Fira Code']
+    }
+  });
 
   return (
     <ThemeProvider theme={theme}>

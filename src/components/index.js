@@ -1,4 +1,3 @@
-import Container from './container';
 import Footer from './footer';
 import List from './list';
 import Nav from './nav';
@@ -7,5 +6,5 @@ import Text from './text';
 import Up from './up';
 
 export {
- Container, Footer, List, Nav, Section, Text, Up 
+ Footer, List, Nav, Section, Text, Up 
 };

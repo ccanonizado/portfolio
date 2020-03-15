@@ -4,13 +4,13 @@ import styled from '@emotion/styled';
 
 const Container = styled('div')(({ theme, primary, top }) => ({
   width: '100%',
-  // height: top ? '100vh' : 'auto',
-  padding: top ? '2em 0 0' : '4em 0',
+  padding: top ? '2em 0 0' : '6em 0',
   background: primary ? theme.primaryBgColor : theme.secondaryBgColor
 }));
 
 const Center = styled('div')({
-  width: '90%',
+  width: '85%',
+  height: '100%',
   left: '50%',
   position: 'relative',
   transform: 'translateX(-50%)'

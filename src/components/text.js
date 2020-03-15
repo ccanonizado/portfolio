@@ -10,7 +10,7 @@ const h2 = styled('h2')({
 });
 
 const h3 = styled('h3')({
-  fontSize: '1.6rem'
+  fontSize: '2rem'
 });
 
 const h4 = styled('h4')(({ theme, firaCode }) => ({
@@ -21,7 +21,8 @@ const h4 = styled('h4')(({ theme, firaCode }) => ({
 }));
 
 const p = styled('p')(({ large }) => ({
-  fontSize: large ? '1.4rem' : '1.1rem'
+  fontSize: large ? '1.4rem' : '1.1rem',
+  whiteSpace: 'pre-wrap'
 }));
 
 const a = styled('a')(({ theme }) => ({
