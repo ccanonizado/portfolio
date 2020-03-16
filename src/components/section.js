@@ -4,7 +4,6 @@ import styled from '@emotion/styled';
 
 const Container = styled('div')(({ theme, primary, top }) => ({
   width: '100%',
-  minHeight: top ? '100vh' : 'auto',
   padding: top ? '2em 0 0' : '6em 0',
   background: primary ? theme.primaryBgColor : theme.secondaryBgColor
 }));

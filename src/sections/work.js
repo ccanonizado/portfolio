@@ -32,7 +32,6 @@ const ListItem = styled('li')(() =>
 
 const Work = () => {
   useEffect(() => {
-    sr.reveal('#workHeader', srOptions());
     sr.reveal('#workEntries', srOptions(500));
   }, []);
 

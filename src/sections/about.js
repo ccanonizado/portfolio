@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from '@emotion/styled';
 
 import { ReactComponent as TechSvg } from '../assets/images/tech.svg';
@@ -7,18 +7,11 @@ import {
  Button, Nav, Section, Text 
 } from '../components';
 
-import { sr, srOptions } from '../utils/scrollReveal';
 import mq from '../utils/mediaQueries';
 
 import { about } from '../constants/content';
 
 const { aboutMq } = mq.config;
-
-const FlexContainer = styled('div')({
-  minHeight: '100vh',
-  display: 'flex',
-  flexDirection: 'column'
-});
 
 const Content = styled('div')(() =>
   mq({
@@ -46,11 +39,9 @@ const Intro = styled(Text.p)(({ theme }) =>
 
 const TechContainer = styled('div')(() =>
   mq({
-    flex: 1,
-    width: '100%',
     marginTop: '3em',
+    width: '100%',
     display: 'flex',
-    alignItems: 'flex-end',
     justifyContent: aboutMq.techContainer
   }));
 
@@ -61,36 +52,22 @@ const Tech = styled(TechSvg)(() =>
     viewBox: about.techViewBox
   }));
 
-const About = () => {
-  useEffect(() => {
-    sr.reveal('#aboutHeader', srOptions(0));
-    sr.reveal('#aboutSubHeader', srOptions(500));
-    sr.reveal('#aboutIntro', srOptions(1000));
-    sr.reveal('#aboutResume', srOptions(1100));
-  }, []);
-
-  return (
-    <Section primary top id="about" className="about">
-      <FlexContainer>
-        <Nav />
-        <Content>
-          <Header id="aboutHeader">{about.header}</Header>
-          <SubHeader id="aboutSubHeader">{about.subHeader}</SubHeader>
-          <Intro large id="aboutIntro">
-            {about.intro}
-          </Intro>
-          <div id="aboutResume">
-            <Button onClick={() => alert('To add ASAP :)')}>
-              {about.resume}
-            </Button>
-          </div>
-        </Content>
-        <TechContainer>
-          <Tech />
-        </TechContainer>
-      </FlexContainer>
-    </Section>
-  );
-};
-
+const About = () => (
+  <Section primary top id="about" className="about">
+    <Nav />
+    <Content>
+      <Header id="aboutHeader">{about.header}</Header>
+      <SubHeader id="aboutSubHeader">{about.subHeader}</SubHeader>
+      <Intro large id="aboutIntro">
+        {about.intro}
+      </Intro>
+      <div id="aboutResume">
+        <Button onClick={() => alert('To add ASAP :)')}>{about.resume}</Button>
+      </div>
+    </Content>
+    <TechContainer>
+      <Tech />
+    </TechContainer>
+  </Section>
+);
 export default About;

@@ -57,26 +57,26 @@ module.exports = {
   projects: {
     header: 'MY PROJECTS',
     info:
-      'Note: At Samsung, I developed high quality modules using React. However, I cannot disclose any details due to a signed non-disclosure agreement.',
+      'Note: At Samsung, I developed high-quality features using React. However, I cannot disclose any details due to a signed non-disclosure agreement.',
     content: [
       {
         title: 'Komunidad (under development)',
         description:
-          '\tKomunidad is a mobile application meant to monitor and check on the status of communities. It collects images and data from hundreds to thousands of cameras around the Philippines that users will then see.\n\n\tAdministrators of the application can post announcements and alerts; users can add their own locations as well. Since the application is made with Flutter, this application is compatible with both Android and iOS devices.',
+          '\tKomunidad is a mobile application meant to monitor and check the status of communities. It collects images and data from hundreds to thousands of cameras around the Philippines that users can eventually see.\n\n\tAdministrators of the application can post announcements and alerts; users can add their own locations as well. Since the application is made with Flutter, this application is compatible with both Android and iOS devices.',
         dependencies: ['Flutter', 'Firebase', 'Java'],
         github: null
       },
       {
         title: 'Sign Me Up',
         description:
-          '\tSign Me Up is the research output that I came up with (equivalent to a thesis project). It is a sign language translator that captures still images of hand signs and then translates them into letter/words. It also has a database of hand signals that people can refer to if they want to communicate with a deaf person.\n\n\tConvolutional Neural Network was used to train the data with the help of Tensorflow. This project won best in research for the Computer Science category during the 2nd ICS Mini-Symposium held at the University of the Philippines, Los Banos, Laguna.',
+          '\tSign Me Up is the undergraduate research output that I presented which is equivalent to a thesis project. It is a sign language translator that captures still images of hand signs and then translates them into letter/words. It also has a database of hand signals that people can refer to if they want to communicate with a deaf person.\n\n\tConvolutional Neural Network was used to train the data with the help of Tensorflow. This project won best in research for the Computer Science category during the 2nd ICS Mini-Symposium held at the University of the Philippines, Los Baños, Laguna.',
         dependencies: ['Android Studio', 'Tensorflow'],
         github: 'https://github.com/ccanonizado/sign-language-translator'
       },
       {
         title: 'Super Smash Bros',
         description:
-          '\tSuper Smash Bros is a Python and Protobuf implementation of the classic super smash bros arcade game. This game is multiplayer and can have up to 6 players. It also has chat functionality among its players.\n\n\tThis is the first multiplayer game that I created which also got featured in the Institute of Computer Science exhibit last 2019.',
+          '\tSuper Smash Bros is a Python and Protobuf implementation of the classic Super Smash Bros arcade game. This game is multiplayer and can accommodate up to 6 players. It also has chat functionality among its players.\n\n\tThis is the first multiplayer game that I created which also got featured in the Institute of Computer Science exhibit last 2019.',
         dependencies: ['Python', 'Pygame', 'Protobuf'],
         github: 'https://github.com/ccanonizado/super-smash-bros'
       }
@@ -85,7 +85,7 @@ module.exports = {
   contact: {
     header: 'CONTACT ME',
     content: [
-      'I am currently looking for remote opportunities.\n\nIf you are looking for someone to add to your team, I might be the right guy!\nOr if you just want to talk, share ideas, feel free to send me an email at ',
+      'I am currently looking for remote opportunities.\n\nIf you are looking for someone to add to your team, I might be the right guy!\nOr if you just want to talk, share ideas, or just connect, feel free to send me an email at ',
       <a key="email" href="mailto:canonizadocarlos@gmail.com">
         canonizadocarlos@gmail.com
       </a>,
