@@ -120,16 +120,7 @@ const config = {
       'calc(100% - 6em)',
       'calc(100% - 3em)'
     ],
-    descriptionPadding: [
-      '3em',
-      '3em',
-      '3em',
-      '3em',
-      '3em',
-      '3em',
-      '1.5em',
-      '1.5em'
-    ],
+    descriptionPadding: ['3em', '3em', '3em', '3em', '3em', '1.5em'],
     contentJustify: [
       'space-between',
       'space-between',
