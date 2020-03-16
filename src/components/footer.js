@@ -3,17 +3,22 @@ import styled from '@emotion/styled';
 
 import { footer } from '../constants/content';
 
+import mq from '../utils/mediaQueries';
+
+const { footerMq } = mq.config;
+
 const Container = styled('div')({
   width: '100%',
   textAlign: 'center'
 });
 
-const Content = styled('p')(({ theme }) => ({
-  padding: '2em 0',
-  fontSize: '1rem',
-  fontFamily: 'Fira Code',
-  color: theme.footerContentColor
-}));
+const Content = styled('p')(({ theme }) =>
+  mq({
+    padding: '2em 0',
+    fontFamily: 'Fira Code',
+    fontSize: footerMq,
+    color: theme.footerContentColor
+  }));
 
 const Footer = () => (
   <Container>

@@ -2,6 +2,10 @@ import ScrollReveal from 'scrollreveal';
 
 const hasSR = typeof window === 'undefined';
 
+/*
+  Config from Brittany Chiang's v4 portfolio:
+    https://github.com/bchiang7/v4
+*/
 export const sr = hasSR ? null : ScrollReveal();
 export const srOptions = (delay = 200) => ({
   delay,
