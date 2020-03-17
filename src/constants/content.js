@@ -45,11 +45,11 @@ module.exports = {
       },
       {
         title: 'Amihan Global Strategies (AGSX)',
-        subTitle: 'Software Engineer Intern (Jun 2018 – Aug 2018)',
+        subTitle: 'Software Engineer Intern (June 2018 – August 2018)',
         description: [
           '\tI worked for AGSX for my internship where I experienced what it is like to work in a start-up corporate setting.\n\n\tThis is where I first learned the industry practices, where I got to create a ',
           <strong key="chatbot">financial chatbot</strong>,
-          ' using Angular 5 and Basic Scala Backend.'
+          ' using Angular 5, Dialogflow, and Basic Scala Backend.'
         ]
       }
     ]
@@ -57,20 +57,20 @@ module.exports = {
   projects: {
     header: 'MY PROJECTS',
     info:
-      'Note: At Samsung, I developed high-quality features using React. However, I cannot disclose any details due to a signed non-disclosure agreement.',
+      'Note: At Samsung, I developed high-quality modules using React. However, I cannot disclose any details due to a signed non-disclosure agreement.',
     content: [
       {
         title: 'Komunidad (under development)',
         description:
-          '\tKomunidad is a mobile application meant to monitor and check the status of communities. It collects images and data from hundreds to thousands of cameras around the Philippines that users can eventually see.\n\n\tAdministrators of the application can post announcements and alerts; users can add their own locations as well. Since the application is made with Flutter, this application is compatible with both Android and iOS devices.',
+          '\tKomunidad is a mobile application meant to monitor and check the status (like weather) of different communities. It collects images and data from hundreds to thousands of cameras around the Philippines that users can eventually see.\n\n\tAdministrators of the application can post announcements and alerts; users can add their own locations as well. Since the application is made with Flutter, this application is compatible with both Android and iOS devices.',
         dependencies: ['Flutter', 'Firebase', 'Java'],
         github: null
       },
       {
         title: 'Sign Me Up',
         description:
-          '\tSign Me Up is the undergraduate research output that I presented which is equivalent to a thesis project. It is a sign language translator that captures still images of hand signs and then translates them into letter/words. It also has a database of hand signals that people can refer to if they want to communicate with a deaf person.\n\n\tConvolutional Neural Network was used to train the data with the help of Tensorflow. This project won best in research for the Computer Science category during the 2nd ICS Mini-Symposium held at the University of the Philippines, Los Baños, Laguna.',
-        dependencies: ['Android Studio', 'Tensorflow'],
+          '\tSign Me Up is the undergraduate research output that I presented which is equivalent to a thesis project. It is a sign language translator that captures still images of hand signs and then translates them into letter/words. It also has a database of hand signals that people can refer to if they want to communicate with a deaf person.\n\n\tConvolutional Neural Network was used to train the data with the help of TensorFlow. This project won best in research for the Computer Science category during the 2nd ICS Mini-Symposium held at the University of the Philippines, Los Baños, Laguna.',
+        dependencies: ['Android Studio', 'TensorFlow'],
         github: 'https://github.com/ccanonizado/sign-language-translator'
       },
       {
