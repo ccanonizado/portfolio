@@ -94,5 +94,5 @@ module.exports = {
     linkedin: 'https://www.linkedin.com/in/ccanonizado/',
     github: 'https://github.com/ccanonizado'
   },
-  footer: 'Design by Carlos Canonizado'
+  footer: 'ccanonizado | 2020'
 };

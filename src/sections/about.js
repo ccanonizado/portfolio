@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import { ReactComponent as TechSvg } from '../assets/images/tech.svg';
+import resumePdf from '../assets/resume.pdf';
 
 import {
  Button, Nav, Section, Text 
@@ -62,7 +63,11 @@ const About = () => (
         {about.intro}
       </Intro>
       <div id="aboutResume">
-        <Button onClick={() => alert('To add ASAP :)')}>{about.resume}</Button>
+        <a href={resumePdf} download="Carlos_Canonizado_Resume">
+          <i role="button" aria-label={about.resume}>
+            <Button>{about.resume}</Button>
+          </i>
+        </a>
       </div>
     </Content>
     <TechContainer>
