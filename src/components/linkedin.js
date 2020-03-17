@@ -6,11 +6,11 @@ import { ReactComponent as LinkedInSvg } from '../assets/icons/linkedin.svg';
 import { contact } from '../constants/content';
 
 const LinkedInButton = styled(LinkedInSvg)(({ theme }) => ({
+  cursor: 'pointer',
+  marginLeft: 12,
   width: 30,
   height: 30,
-  marginLeft: 12,
   viewBox: '0 0 30 30',
-  cursor: 'pointer',
   transition: '0.5s ease all',
   fill: theme.linkColor,
   ':hover': {

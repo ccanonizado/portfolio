@@ -13,10 +13,10 @@ const Container = styled('div')(({ visibility, opacity }) => ({
 }));
 
 const UpButton = styled(UpSvg)(({ theme }) => ({
+  cursor: 'pointer',
   width: 30,
   height: 30,
   viewBox: '0 0 30 30',
-  cursor: 'pointer',
   transition: '0.5s ease all',
   fill: theme.linkColor,
   ':hover': {

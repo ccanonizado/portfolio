@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
 
 const Button = styled('button')(({ theme }) => ({
+  cursor: 'pointer',
+  fontSize: '1rem',
+  padding: '10px 20px',
+  textDecoration: 'none',
+  transition: '0.25s ease all',
   color: theme.buttonTextColor,
   backgroundColor: theme.buttonInactiveBgColor,
   border: `1px solid ${theme.buttonBorderColor}`,
-  fontSize: '1rem',
-  textDecoration: 'none',
-  cursor: 'pointer',
-  transition: '0.25s ease all',
-  padding: '10px 20px',
   '&:hover': {
     backgroundColor: theme.buttonActiveBgColor
   },

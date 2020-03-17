@@ -5,10 +5,6 @@ import {
  GitHub, List, Section, Text 
 } from '../components';
 
-import komunidadImg from '../assets/images/komunidad.jpg';
-import signMeUpImg from '../assets/images/signMeUp.jpg';
-import superSmashBrosImg from '../assets/images/superSmashBros.jpg';
-
 import { sr, srOptions } from '../utils/scrollReveal';
 import mq from '../utils/mediaQueries';
 
@@ -18,9 +14,9 @@ const { projectsMq } = mq.config;
 
 const Info = styled(Text.p)(({ theme }) =>
   mq({
-    width: projectsMq.info,
     margin: '0.5em 0',
-    color: theme.projectsInfoColor
+    color: theme.projectsInfoColor,
+    width: projectsMq.info
   }));
 
 const Header = styled('div')({
@@ -60,9 +56,9 @@ const Content = styled('div')(() =>
 
 const Detail = styled('div')(() =>
   mq({
-    width: projectsMq.contentDetail,
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    width: projectsMq.contentDetail
   }));
 
 const ImageContainer = styled('div')(({ theme }) =>
@@ -87,21 +83,6 @@ const Projects = () => {
     sr.reveal('#projectsEntry1', srOptions(500));
     sr.reveal('#projectsEntry2', srOptions(500));
   }, []);
-
-  const getImage = (title) => {
-    const [komunidad, signMeUp, superSmashBros] = projects.content;
-    switch (title) {
-      case komunidad.title:
-        return komunidadImg;
-      case signMeUp.title:
-        return signMeUpImg;
-      case superSmashBros.title:
-        return superSmashBrosImg;
-      default:
-        break;
-    }
-    return '';
-  };
 
   const getDependencies = (list) => (
     <Dependencies>
@@ -137,10 +118,7 @@ const Projects = () => {
                   {getDependencies(entry.dependencies)}
                 </Content.Detail>
                 <ImageContainer>
-                  <Content.Image
-                    alt={entry.title}
-                    src={getImage(entry.title)}
-                  />
+                  <Content.Image alt={entry.title} src={entry.image} />
                 </ImageContainer>
               </Content>
             </article>

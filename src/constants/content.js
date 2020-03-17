@@ -1,4 +1,7 @@
 const React = require('react');
+const komunidad = require('../assets/images/komunidad.jpg');
+const signMeUp = require('../assets/images/signMeUp.jpg');
+const superSmashBros = require('../assets/images/superSmashBros.jpg');
 
 module.exports = {
   navLinks: [
@@ -61,6 +64,7 @@ module.exports = {
     content: [
       {
         title: 'Komunidad (under development)',
+        image: komunidad,
         description:
           '\tKomunidad is a mobile application meant to monitor and check the status (like weather) of different communities. It collects images and data from hundreds to thousands of cameras around the Philippines that users can eventually see.\n\n\tAdministrators of the application can post announcements and alerts; users can add their own locations as well. Since the application is made with Flutter, this application is compatible with both Android and iOS devices.',
         dependencies: ['Flutter', 'Firebase', 'Java'],
@@ -68,6 +72,7 @@ module.exports = {
       },
       {
         title: 'Sign Me Up',
+        image: signMeUp,
         description:
           '\tSign Me Up is the undergraduate research output that I presented which is equivalent to a thesis project. It is a sign language translator that captures still images of hand signs and then translates them into letter/words. It also has a database of hand signals that people can refer to if they want to communicate with a deaf person.\n\n\tConvolutional Neural Network was used to train the data with the help of TensorFlow. This project won best in research for the Computer Science category during the 2nd ICS Mini-Symposium held at the University of the Philippines, Los Baños, Laguna.',
         dependencies: ['Android Studio', 'TensorFlow'],
@@ -75,6 +80,7 @@ module.exports = {
       },
       {
         title: 'Super Smash Bros',
+        image: superSmashBros,
         description:
           '\tSuper Smash Bros is a Python and Protobuf implementation of the classic Super Smash Bros arcade game. This game is multiplayer and can accommodate up to 6 players. It also has chat functionality among its players.\n\n\tThis is the first multiplayer game that I created which also got featured in the Institute of Computer Science exhibit last 2019.',
         dependencies: ['Python', 'Pygame', 'Protobuf'],
