@@ -82,7 +82,7 @@ module.exports = {
         title: 'Super Smash Bros',
         image: superSmashBros,
         description:
-          '\tSuper Smash Bros is a Python and Protobuf implementation of the classic Super Smash Bros arcade game. This game is multiplayer and can accommodate up to 6 players. It also has chat functionality among its players.\n\n\tThis is the first multiplayer game that I created which also got featured in the Institute of Computer Science exhibit last 2019.',
+          '\tSuper Smash Bros is a Python and Protobuf implementation of the classic Super Smash Bros arcade game. This game is multiplayer and can accommodate up to 6 players. It also has a chat functionality among its players.\n\n\tThis is the first multiplayer game that I, along with my teammates, created. This project also got featured in the UPLB Institute of Computer Science exhibit last 2019.',
         dependencies: ['Python', 'Pygame', 'Protobuf'],
         github: 'https://github.com/ccanonizado/super-smash-bros'
       }
