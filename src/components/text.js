@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from '@emotion/styled';
 
 import mq from '../utils/mediaQueries';
@@ -6,12 +5,10 @@ import mq from '../utils/mediaQueries';
 const { textMq } = mq.config;
 
 const h1 = styled('h1')({
-  fontSize: '4.8rem',
   lineHeight: 1
 });
 
 const h2 = styled('h2')({
-  fontSize: '4.2rem',
   lineHeight: 1
 });
 
@@ -45,13 +42,13 @@ const a = styled('a')(({ theme }) => ({
   }
 }));
 
-const Text = (children) => <Text.p>{children}</Text.p>;
-
-Text.h1 = h1;
-Text.h2 = h2;
-Text.h3 = h3;
-Text.h4 = h4;
-Text.a = a;
-Text.p = p;
+const Text = {
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a
+};
 
 export default Text;
