@@ -91,11 +91,11 @@ module.exports = {
   contact: {
     header: 'CONTACT ME',
     content: [
-      'I am currently looking for remote opportunities.\n\nIf you are looking for someone to add to your team, I might be the right guy!\nOr if you just want to talk, share ideas, or just connect, feel free to send me an email at ',
+      'If you want to talk, share ideas, or just connect, feel free to send me an email at ',
       <a key="email" href="mailto:canonizadocarlos@gmail.com">
         canonizadocarlos@gmail.com
       </a>,
-      '.\n\nYou can also take a look at my LinkedIn and other projects at GitHub.'
+      '.\nYou can also take a look at my LinkedIn and other projects at GitHub.'
     ],
     linkedin: 'https://www.linkedin.com/in/ccanonizado/',
     github: 'https://github.com/ccanonizado'
